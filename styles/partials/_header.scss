@@ -1,0 +1,142 @@
+header {
+	background: $bg2;
+}
+
+.headerTop {
+	min-height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.topLine {
+	margin-right: auto;
+}
+
+.contactInfo {
+	margin-right: 25px;
+}
+
+.socialIcons a {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.socialIcons a:last-child {
+	margin-right: 0;
+}
+
+.socialIcons i {
+	color: $green;
+}
+
+.headerBottom {
+	display: flex;
+	align-items: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav {
+	display: flex;
+	margin-left: auto;
+}
+
+nav li {
+	padding-right: 30px;
+}
+
+nav li:last-child {
+	padding-right: 0;
+}
+
+.banner {
+	background: url("../assets/heroImage.jpg") transparent center center no-repeat;
+	min-height: 825px;
+	display: flex;
+	align-items: center;
+}
+
+.banner h1,
+.banner h3,
+.banner h4,
+.banner h5 {
+	text-align: center;
+	color: #fff;
+}
+
+.banner h1 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.banner h3,
+.banner h4 {
+	text-transform: capitalize;
+}
+
+.banner h3::after {
+	content: "";
+	border-bottom: 1px solid #fff;
+	display: block;
+	width: 155px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.banner h5 {
+	font-weight: 400;
+}
+
+.clearButton {
+	width: 240px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 70px;
+	border: 1px solid #fff;
+	background-color: transparent;
+}
+
+.clearButton:hover {
+	background-color: $green;
+	border: none;
+}
+
+.clearButton:active {
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+	.headerTop {
+		flex-direction: column;
+	}
+
+	.topLine {
+		display: none;
+	}
+
+	.headerTop .contactInfo {
+		display: none;
+	}
+
+	.headerBottom {
+		flex-direction: column;
+	}
+
+	nav ul {
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: center;
+	}
+
+	nav li {
+		line-height: 25px;
+	}
+}

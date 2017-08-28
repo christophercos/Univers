@@ -1,0 +1,76 @@
+.teachers {
+	padding-top: 95px;
+	padding-bottom: 150px;
+}
+
+.teachersBlurb {
+	width: 500px;
+	text-align: center;
+}
+
+.teacherContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.teacherDesc {
+	margin-top: 35px;
+}
+
+.teacherDesc__subTitle {
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+.teacherDesc__connect {
+	font-size: 18px;
+	text-transform: uppercase;
+
+}
+
+.teacherDesc__connect span {
+	margin-left: 35px;
+}
+
+.teacherDesc__connect--icon i {
+	margin-right: 15px;
+}
+
+.teachers button {
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.teachers {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.teacherContainer {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	.teacher {
+		display: flex;
+		margin-bottom: 50px;
+	}
+
+	.teacherDesc {
+		text-align: center;
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.teacher {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,50 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+}
+
+.twoButtons {
+	display: flex;
+	justify-content: center;
+}
+
+.buttonGreen,
+.buttonBlack {
+	width: 185px;
+	height: 50px;
+	border: none;
+}
+
+.buttonGreen h6,
+.buttonBlack h6 {
+	color: #fff;
+}
+
+.buttonGreen {
+	background: $green;
+	margin-right: 20px;
+}
+
+.buttonBlack {
+	background: #000;
+}
+
+.smallButton {
+	background: $green;
+	border: none;
+	width: 65px;
+	height: 30px;
+	margin-bottom: 30px;
+}
+
+.smallButtonText {
+	font-size: 10px;
+	color: #fff;
+}
+
+.courses .clearButton,
+.ourGallery .clearButton {
+	border: 1px solid $green;
+}
